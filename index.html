@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu espacio ideal</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+</head>
+<body>
+    <div id="main-body" class="main-body">
+    <aside class="furniture-loader">
+        <label for="file" id="fileTag" style="cursor: pointer;">Upload Image</label>   
+        <input type="file"  accept="image/*" name="image" id="file" style="margin-top: 5px;" onchange="loadFile(event)">
+    </aside>
+    <main id="main" class="main">
+        <img draggable="false" class="main__img" src="Backgrounds/vecteezy_interior-empty-room-in-3d-rendering_2070345.jpg" alt="">
+        <div class="main__room">
+        </div>
+    </main>
+    <aside class="furniture-picker">
+        <div class="furniture-picker__menu">
+            <span class="furniture-picker__menu--text">Articulos</span>
+            <img class="furniture-picker__menu--icon menuIcon" src="Assets/menu.png" alt="">
+            <img class="furniture-picker__menu--icon closeIcon" src="Assets/close.png" alt="">
+        </div>
+
+        <div class="furniture-picker__container">
+            <select class="furniture-picker__select" name="" id="selection">
+                <option value="SofaCama">Sofa cama</option>
+                <option value="Sofa">Sofa</option>
+                <option value="Reclinables">Reclinables</option>
+                <option value="MesasAuxiliares">Mesas auxiliares</option>
+                <option value="Cama">Cama</option>
+                <option value="MesasDeNoche">mesas de noche</option>
+                <option value="Mesas">mesas</option>
+                <option value="Sillas">sillas</option>
+                <option value="Bufeteras">bufeteras</option>
+               <!-- <option value="BarStool">Bar stool</option> -->
+               <!-- <option value="Modulos">Modulos</option> -->
+                <option value="LamparasDeMesa">Lamparas de mesa</option>
+                <option value="LamparasDePie">Lamparas de pie</option>
+                <option value="LaparasColgantes">Laparas colgantes</option>
+                <option value="Escritorios">Escritorios</option>
+                <option value="Alfombras">Alfombras</option>
+                <option value="SillasEjecutivas">Sillas ejecutivas</option> 
+                <option value="Cuadros">Cuadros</option> 
+            </select>
+            <ul id="pickerList" class="furniture-picker__list">
+           
+            </ul>
+        </div>
+        <img class="furniture-picker__trashcan" src="Assets/trashcan-w-text.png" alt="arrastrar imagen aqui para eliminarla.">
+    </aside>
+
+    <script type="text/javascript" src="draw.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="download.js"></script>
+</body>
+
+</html>
