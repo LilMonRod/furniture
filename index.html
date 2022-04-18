@@ -6,24 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseña tu espacio ideal</title>
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <link rel="stylesheet" href="tamanos_editables.css">
 </head>
 <body>
+    <!--
+        __________¶¶_¶¶__¶¶_¶¶_
+        _________¶¶_¶¶_¶¶_¶¶_¶¶¶ 
+        _____¶¶¶¶¶____________¶¶¶¶¶¶¶ 
+        ___¶¶¶¶¶_______________¶¶¶¶¶¶¶ 
+        __¶¶¶¶¶__________________¶¶¶¶¶ 
+        __¶¶¶¶____________________¶¶¶
+        ___¶¶______________________¶¶¶ 
+        ___¶________________________¶¶¶¶ 
+        __¶¶_____¶¶¶______¶¶________¶¶¶¶¶¶¶ 
+        __¶_____¶¶¶¶_____¶¶¶¶¶______¶¶¶¶¶¶_¶ 
+        __¶____¶¶¶¶¶____¶¶¶¶¶¶¶¶____¶¶¶¶¶¶__¶ 
+        __¶¶__¶¶¶¶¶______¶¶¶¶¶¶¶___¶¶¶¶¶¶¶___¶ 
+        ___¶__¶¶¶__________¶¶¶¶___¶¶¶¶¶¶¶¶¶___¶ 
+        ___¶¶____________________¶¶¶¶¶¶¶¶¶¶___¶¶¶ 
+        ___¶¶¶_____¶¶¶¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶ 
+        ___¶¶¶¶¶___¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶ 
+        ___¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶ 
+        ___¶¶¶¶¶¶¶¶__¶¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶ 
+        ____¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
+        ____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶¶¶¶¶¶ 
+        ____¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶¶¶¶ 
+        __¶¶¶¶¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶ 
+        __¶¶¶¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶ 
+        ___¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶¶ 
+        ___________________¶¶¶¶¶¶¶¶¶¶¶ 
+        ___________________¶¶¶¶¶¶¶¶¶¶ 
+        Version 4/17/22
+    -->
     <div id="main-body" class="main-body">
     <aside class="furniture-loader">
-        <label for="file" id="fileTag" style="cursor: pointer;">Upload Image</label>   
-        <input type="file"  accept="image/*" name="image" id="file" style="margin-top: 5px;" onchange="loadFile(event)">
+        <label for="imageLoader" id="fileTag" style="cursor: pointer;">
+            <span class="hide">Cargar imagen</span><img class="furniture-loader--icon" src="Assets/cargar.png" alt="">
+            <input type="file" name="imageLoader" id="image-input" style="opacity: 0; position: fixed; top: 10px; left: 10px; height: 45px; padding-top: 10px; padding-bottom: 10px; z-index: 1;" accept="image/jpeg, image/png, image/jpg">
+        </label>   
     </aside>
     <main id="main" class="main">
-        <img draggable="false" class="main__img" src="Backgrounds/vecteezy_interior-empty-room-in-3d-rendering_2070345.jpg" alt="">
+        <img draggable="false" class="main__img" id="display-image" src="Assets/Backgrounds/vecteezy_interior-empty-room-in-3d-rendering_2070345.jpg" alt="">
         <div class="main__room">
+            
         </div>
     </main>
     <aside class="furniture-picker">
         <div class="furniture-picker__menu">
-            <span class="furniture-picker__menu--text">Articulos</span>
-            <img class="furniture-picker__menu--icon menuIcon" src="Assets/menu.png" alt="">
-            <img class="furniture-picker__menu--icon closeIcon" src="Assets/close.png" alt="">
+            <img class="furniture-picker__menu--button menuButton" src="Assets/mostrar_articulos.png" alt="Mostrar articulos del menu">
+            <img class="furniture-picker__menu--button closeButton" src="Assets/ocultar_articulos.png" alt="Ocultar articulos del menu">
+            <img class="furniture-picker__menu--icon menuIcon" src="Assets/menu_show.png" alt="Click para mostrar menu">
+            <img class="furniture-picker__menu--icon closeIcon" src="Assets/menu_hide.png" alt="Click para ocultar menu">
         </div>
 
         <div class="furniture-picker__container">
@@ -51,12 +84,11 @@
            
             </ul>
         </div>
-        <img class="furniture-picker__trashcan" src="Assets/trashcan-w-text.png" alt="arrastrar imagen aqui para eliminarla.">
+        <img class="furniture-picker__trashcan" src="Assets/Eliminar.png" alt="arrastrar imagen aqui para eliminarla.">
     </aside>
 
-    <script type="text/javascript" src="draw.js"></script>
-    <script type="text/javascript" src="html2canvas.js"></script>
-    <script type="text/javascript" src="download.js"></script>
+    <script type="module" src="draw.js"></script>
+    <script src="loadFile.js"></script>
 </body>
 
 </html>

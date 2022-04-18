@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+body {
+    overflow-x: hidden;
+}
+
+.furniture-picker__trashcan {
+    display: flex;
+    background: #7f00c9;
+    padding: 15px 0;
+}
+
 .hide {
     position: absolute;
     width: 1px;
@@ -9,6 +19,10 @@
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+.furniture-loader--icon {
+    width: 150px;
+    height: auto;
 }
 .furniture-picker__img {
     display: block;
@@ -27,6 +41,7 @@
 .main__room {
     height: 100%;
     width: 100%;
+    max-width: 1450px;
     top: 0;
     position: absolute;
 }
@@ -51,6 +66,8 @@ ul, li, body, img {
     top: 0;
     right: 0;
     height: 100vh;
+    width: 22vw;
+    border-radius: 15px;
     display: inline-flex;
     flex-direction: column;
 }
@@ -67,6 +84,15 @@ ul, li, body, img {
     flex-direction: column;
     z-index: 1;
 }
+.furniture-quote {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    height: 45px;
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 1;
+}
 .furniture-delete {
     position: fixed;
     bottom: 0;
@@ -77,9 +103,14 @@ ul, li, body, img {
 .furniture-picker__list::-webkit-scrollbar {
   width: 10px;
 }
+.furniture-picker__list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .furniture-picker__list {
-    overflow: scroll;
-    height: calc(100vh - 150px);
+    overflow-x: scroll;
+    height: calc(100vh - 180px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,11 +119,24 @@ ul, li, body, img {
     display: flex;
     background-color: rgba(255, 255, 255, 0.664);
     padding: 5px;
-    margin-bottom: 8px;
+    border-radius: 10px;
+    margin: 3px 5px 5px 5px;
+    margin-top: 3px;
+
+}
+.furniture-picker__rotate-img {
+    width: 100px;
+    height: auto;
+    opacity: 0;
+    transition: .35s;
 }
 .furniture-picker__container {   
     transform: translateX(200%);
     transition: transform 0.4s;
+}
+.furniture-picker__list-container:hover 
+.furniture-picker__rotate-img {
+    opacity: 1;
 }
 
 /* Handle */
@@ -106,7 +150,7 @@ ul, li, body, img {
   background: #f8aa22; 
 }
 .furniture-picker__trashcan {
-    width: clamp(90px, 15vw, 120px);
+    width: clamp(90px, 15vw, 165px);
     align-self: center;
 }
 .furniture-picker__title {
@@ -114,16 +158,15 @@ ul, li, body, img {
     display: inline-block;
 }
 .furniture-picker__menu--icon {
-    width: 19px;
+    width: 50px;
     height: auto;
     margin-left: 10px;
 }
-.furniture-picker__menu--text {
-    color: #000000;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+.furniture-picker__menu--button {
+    width: 100px;
+    height: auto;
 }
+
 #fileTag {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -135,7 +178,8 @@ ul, li, body, img {
     margin: 15px 0;
 }
 
-.closeIcon {
+.closeIcon,
+.closeButton {
     display: none;
 }
 
@@ -159,9 +203,9 @@ ul, li, body, img {
     color: #000000;
     background: #fcb63dcc; /*fab131*/
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .furniture-picker {
-        width: 25vw;
+        width: 45vw;
     }
     .furniture-picker__list {
         align-self: flex-end;
@@ -172,7 +216,14 @@ ul, li, body, img {
         font-size: 14px;
     }
     .furniture-picker__menu--icon {
-        width: 16px;
+        width: 35px;
+    }
+    .furniture-loader--icon {
+        width: 100px;
+        height: auto;
+    }
+    .furniture-picker__rotate-img {
+        width: 80px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -187,6 +238,7 @@ ul, li, body, img {
         transform: translateX(0%);
         display: inline-flex;
         flex-wrap: wrap;
+        height: calc(63vh - 180px);
     }
     .furniture-picker__container {
         transform: translateX(0%);
@@ -194,81 +246,12 @@ ul, li, body, img {
     .furniture-picker__img {
         width: 24vw;
     }
-}
-
-.SofaCama {
-    width: 27vw;
-    height: auto;
-}
-.Sofa {
-    width: 35vw;
-    height: auto;
-}
-.Reclinables {
-    width: 16vw;
-    height: auto;
-}
-.MesasAuxiliares {
-    width: 25vw;
-    height: auto;
-}
-.Cama {
-    width: 45vw;
-    height: auto;
-}
-.MesasDeNoche {
-    width: 20vw;
-    height: auto;
-}
-.Mesas {
-    width: 26vw;
-    height: auto;
-}
-.Sillas {
-    width: 10vw;
-    height: auto;
-}
-.Bufeteras {
-    width: 20vw;
-    height: auto;
-}
-.BarStool {
-    width: 8vw;
-    height: auto;
-}
-.Modulos {
-    width: 4vw;
-    height: auto;
-}
-.LamparasDeMesa {
-    width: 5vw;
-    height: auto;
-}
-.LamparasDePie {
-    width: 10vw;
-    height: auto;
-}
-.LaparasColgantes {
-    width: 9vw;
-    height: auto;
-}
-.Escritorios {
-    width: 14vw;
-    height: auto;
-}
-.Alfombras {
-    width: 55vw;
-    height: auto;
-}
-.SillasEjecutivas {
-    width: 8vw;
-    height: auto;
-}
-.Cuadros {
-    width: 20vw;
-    height: auto;
+    .furniture-picker__rotate-img {
+        width: 60px;
+    }
 }
 
 ul img {
     max-width: 100px;
 }
+
