@@ -1,0 +1,447 @@
+/*
+Tamamño de los elementos
+*/
+
+.SofaCama[data-size="big"] {
+    width: 27vw;
+    height: auto;
+}
+.SofaCama[data-size="mid"] {
+    width: 27vw;
+    height: auto;
+}
+.SofaCama[data-size="small"] {
+    width: 27vw;
+    height: auto;
+}
+
+.Sofa[data-size="big"] {
+    width: 35vw;
+    height: auto;
+}
+.Sofa[data-size="mid"] {
+    width: 35vw;
+    height: auto;
+}
+.Sofa[data-size="small"] {
+    width: 35vw;
+    height: auto;
+}
+.Reclinables[data-size="big"] {
+    width: 16vw;
+    height: auto;
+}
+.Reclinables[data-size="mid"] {
+    width: 16vw;
+    height: auto;
+}
+.Reclinables[data-size="small"] {
+    width: 16vw;
+    height: auto;
+}
+.MesasAuxiliares[data-size="big"] {
+    width: 25vw;
+    height: auto;
+}
+.MesasAuxiliares[data-size="mid"] {
+    width: 25vw;
+    height: auto;
+}
+.MesasAuxiliares[data-size="small"] {
+    width: 25vw;
+    height: auto;
+}
+.Cama[data-size="big"] {
+    width: 45vw;
+    height: auto;
+}
+.Cama[data-size="mid"] {
+    width: 45vw;
+    height: auto;
+}
+.Cama[data-size="small"] {
+    width: 45vw;
+    height: auto;
+}
+.MesasDeNoche[data-size="big"] {
+    width: 20vw;
+    height: auto;
+}
+.MesasDeNoche[data-size="mid"] {
+    width: 20vw;
+    height: auto;
+}
+.MesasDeNoche[data-size="small"] {
+    width: 20vw;
+    height: auto;
+}
+.Mesas[data-size="big"] {
+    width: 26vw;
+    height: auto;
+}
+.Mesas[data-size="mid"] {
+    width: 26vw;
+    height: auto;
+}
+.Mesas[data-size="small"] {
+    width: 26vw;
+    height: auto;
+}
+.Sillas[data-size="big"] {
+    width: 10vw;
+    height: auto;
+}
+.Sillas[data-size="mid"] {
+    width: 10vw;
+    height: auto;
+}
+.Sillas[data-size="small"] {
+    width: 10vw;
+    height: auto;
+}
+.Bufeteras[data-size="big"] {
+    width: 20vw;
+    height: auto;
+}
+.Bufeteras[data-size="mid"] {
+    width: 20vw;
+    height: auto;
+}
+.Bufeteras[data-size="small"] {
+    width: 20vw;
+    height: auto;
+}
+.BarStool[data-size="big"] {
+    width: 8vw;
+    height: auto;
+}
+.BarStool[data-size="mid"] {
+    width: 8vw;
+    height: auto;
+}
+.BarStool[data-size="small"] {
+    width: 8vw;
+    height: auto;
+}
+.Modulos[data-size="big"] {
+    width: 4vw;
+    height: auto;
+}
+.Modulos[data-size="mid"] {
+    width: 4vw;
+    height: auto;
+}
+.Modulos[data-size="small"] {
+    width: 4vw;
+    height: auto;
+}
+.LamparasDeMesa[data-size="big"] {
+    width: 5vw;
+    height: auto;
+}
+.LamparasDeMesa[data-size="mid"] {
+    width: 5vw;
+    height: auto;
+}
+.LamparasDeMesa[data-size="small"] {
+    width: 5vw;
+    height: auto;
+}
+.LamparasDePie[data-size="big"] {
+    width: 10vw;
+    height: auto;
+}
+.LamparasDePie[data-size="mid"] {
+    width: 10vw;
+    height: auto;
+}
+.LamparasDePie[data-size="small"] {
+    width: 10vw;
+    height: auto;
+}
+.LaparasColgantes[data-size="big"] {
+    width: 9vw;
+    height: auto;
+}
+.LaparasColgantes[data-size="mid"] {
+    width: 9vw;
+    height: auto;
+}
+.LaparasColgantes[data-size="small"] {
+    width: 9vw;
+    height: auto;
+}
+.Escritorios[data-size="big"] {
+    width: 14vw;
+    height: auto;
+}
+.Escritorios[data-size="mid"] {
+    width: 14vw;
+    height: auto;
+}
+.Escritorios[data-size="small"] {
+    width: 14vw;
+    height: auto;
+}
+.Alfombras[data-size="big"] {
+    width: 55vw;
+    height: auto;
+}
+.Alfombras[data-size="mid"] {
+    width: 55vw;
+    height: auto;
+}
+.Alfombras[data-size="small"] {
+    width: 55vw;
+    height: auto;
+}
+.SillasEjecutivas[data-size="big"] {
+    width: 8vw;
+    height: auto;
+}
+.SillasEjecutivas[data-size="mid"] {
+    width: 8vw;
+    height: auto;
+}
+.SillasEjecutivas[data-size="small"] {
+    width: 8vw;
+    height: auto;
+}
+.Cuadros[data-size="big"] {
+    width: 20vw;
+    height: auto;
+}
+.Cuadros[data-size="mid"] {
+    width: 20vw;
+    height: auto;
+}
+.Cuadros[data-size="small"] {
+    width: 20vw;
+    height: auto;
+}
+
+/* *****************
+mobile
+***************** */
+@media only screen and (max-width: 400px) {
+    /*
+    Tamamño de los elementos mobile
+    */
+    
+    .SofaCama[data-size="big"] {
+        width: 27vw;
+        height: auto;
+    }
+    .SofaCama[data-size="mid"] {
+        width: 27vw;
+        height: auto;
+    }
+    .SofaCama[data-size="small"] {
+        width: 27vw;
+        height: auto;
+    }
+    .Sofa[data-size="big"] {
+        width: 35vw;
+        height: auto;
+    }
+    .Sofa[data-size="mid"] {
+        width: 35vw;
+        height: auto;
+    }
+    .Sofa[data-size="small"] {
+        width: 35vw;
+        height: auto;
+    }
+    .Reclinables[data-size="big"] {
+        width: 16vw;
+        height: auto;
+    }
+    .Reclinables[data-size="mid"] {
+        width: 16vw;
+        height: auto;
+    }
+    .Reclinables[data-size="small"] {
+        width: 16vw;
+        height: auto;
+    }
+    .MesasAuxiliares[data-size="big"] {
+        width: 25vw;
+        height: auto;
+    }
+    .MesasAuxiliares[data-size="mid"] {
+        width: 25vw;
+        height: auto;
+    }
+    .MesasAuxiliares[data-size="small"] {
+        width: 25vw;
+        height: auto;
+    }
+    .Cama[data-size="big"] {
+        width: 45vw;
+        height: auto;
+    }
+    .Cama[data-size="mid"] {
+        width: 45vw;
+        height: auto;
+    }
+    .Cama[data-size="small"] {
+        width: 45vw;
+        height: auto;
+    }
+    .MesasDeNoche[data-size="big"] {
+        width: 20vw;
+        height: auto;
+    }
+    .MesasDeNoche[data-size="mid"] {
+        width: 20vw;
+        height: auto;
+    }
+    .MesasDeNoche[data-size="small"] {
+        width: 20vw;
+        height: auto;
+    }
+    .Mesas[data-size="big"] {
+        width: 26vw;
+        height: auto;
+    }
+    .Mesas[data-size="mid"] {
+        width: 26vw;
+        height: auto;
+    }
+    .Mesas[data-size="small"] {
+        width: 26vw;
+        height: auto;
+    }
+    .Sillas[data-size="big"] {
+        width: 10vw;
+        height: auto;
+    }
+    .Sillas[data-size="mid"] {
+        width: 10vw;
+        height: auto;
+    }
+    .Sillas[data-size="small"] {
+        width: 10vw;
+        height: auto;
+    }
+    .Bufeteras[data-size="big"] {
+        width: 20vw;
+        height: auto;
+    }
+    .Bufeteras[data-size="mid"] {
+        width: 20vw;
+        height: auto;
+    }
+    .Bufeteras[data-size="small"] {
+        width: 20vw;
+        height: auto;
+    }
+    .BarStool[data-size="big"] {
+        width: 8vw;
+        height: auto;
+    }
+    .BarStool[data-size="mid"] {
+        width: 8vw;
+        height: auto;
+    }
+    .BarStool[data-size="small"] {
+        width: 8vw;
+        height: auto;
+    }
+    .Modulos[data-size="big"] {
+        width: 4vw;
+        height: auto;
+    }
+    .Modulos[data-size="mid"] {
+        width: 4vw;
+        height: auto;
+    }
+    .Modulos[data-size="small"] {
+        width: 4vw;
+        height: auto;
+    }
+    .LamparasDeMesa[data-size="big"] {
+        width: 5vw;
+        height: auto;
+    }
+    .LamparasDeMesa[data-size="mid"] {
+        width: 5vw;
+        height: auto;
+    }
+    .LamparasDeMesa[data-size="small"] {
+        width: 5vw;
+        height: auto;
+    }
+    .LamparasDePie[data-size="big"] {
+        width: 10vw;
+        height: auto;
+    }
+    .LamparasDePie[data-size="mid"] {
+        width: 10vw;
+        height: auto;
+    }
+    .LamparasDePie[data-size="small"] {
+        width: 10vw;
+        height: auto;
+    }
+    .LaparasColgantes[data-size="big"] {
+        width: 9vw;
+        height: auto;
+    }
+    .LaparasColgantes[data-size="mid"] {
+        width: 9vw;
+        height: auto;
+    }
+    .LaparasColgantes[data-size="small"] {
+        width: 9vw;
+        height: auto;
+    }
+    .Escritorios[data-size="big"] {
+        width: 14vw;
+        height: auto;
+    }
+    .Escritorios[data-size="mid"] {
+        width: 14vw;
+        height: auto;
+    }
+    .Escritorios[data-size="small"] {
+        width: 14vw;
+        height: auto;
+    }
+    .Alfombras[data-size="big"] {
+        width: 55vw;
+        height: auto;
+    }
+    .Alfombras[data-size="mid"] {
+        width: 55vw;
+        height: auto;
+    }
+    .Alfombras[data-size="small"] {
+        width: 55vw;
+        height: auto;
+    }
+    .SillasEjecutivas[data-size="big"] {
+        width: 8vw;
+        height: auto;
+    }
+    .SillasEjecutivas[data-size="mid"] {
+        width: 8vw;
+        height: auto;
+    }
+    .SillasEjecutivas[data-size="small"] {
+        width: 8vw;
+        height: auto;
+    }
+    .Cuadros[data-size="big"] {
+        width: 20vw;
+        height: auto;
+    }
+    .Cuadros[data-size="mid"] {
+        width: 20vw;
+        height: auto;
+    }
+    .Cuadros[data-size="small"] {
+        width: 20vw;
+        height: auto;
+    }
+}
