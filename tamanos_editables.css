@@ -5,27 +5,45 @@ Tamamño de los elementos
 .SofaCama[data-size="big"] {
     width: 27vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 .SofaCama[data-size="mid"] {
     width: 27vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 .SofaCama[data-size="small"] {
     width: 27vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 
 .Sofa[data-size="big"] {
     width: 35vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 .Sofa[data-size="mid"] {
     width: 35vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 .Sofa[data-size="small"] {
     width: 35vw;
     height: auto;
+    /*
+    max-width: xcantidad de pixeles;
+    */
 }
 .Reclinables[data-size="big"] {
     width: 16vw;
