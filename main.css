@@ -78,6 +78,7 @@ ul, li, body, img {
 }
 .furniture-picker--open {
     box-shadow: 0 0 20px -15px #000;
+    z-index: 2;
 }
 
 .furniture-loader {
