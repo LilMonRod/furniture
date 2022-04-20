@@ -224,25 +224,26 @@ function setDown({ target, clientX, clientY }) {
             const menuIcon = document.querySelector(".menuIcon");
             const closeButton = document.querySelector(".closeButton");
             const menuButton = document.querySelector(".menuButton");
-            const asideCont = document.querySelector(".furniture-picker");
             
             function toggleMenu() {
               if (menu.classList.contains("showMenu")) {
                 menu.classList.remove("showMenu");
+                menu.style.transform = "translateX(200%)"
                 furniturePicker.classList.remove("furniture-picker--open");
+                furniturePicker.style.backgroundColor = "transparent";
                 closeIcon.style.display = "none";
                 menuIcon.style.display = "block";
                 closeButton.style.display = "none";
                 menuButton.style.display = "block";
-                asideCont.style.backgroundColor = "transparent";
               } else {
                 menu.classList.add("showMenu");
+                menu.style.transform = "translateX(0)"
                 furniturePicker.classList.add("furniture-picker--open");
+                furniturePicker.style.backgroundColor = "rgba(255, 255, 255, 0.664)";
                 closeIcon.style.display = "block";
                 menuIcon.style.display = "none";
                 closeButton.style.display = "block";
                 menuButton.style.display = "none";
-                asideCont.style.backgroundColor = "rgba(255, 255, 255, 0.664)";
               }
             }
             

@@ -75,6 +75,7 @@ ul, li, body, img {
     border-radius: 15px;
     display: inline-flex;
     flex-direction: column;
+    transition: backgroundColor 0.5s;
 }
 .furniture-picker--open {
     box-shadow: 0 0 20px -15px #000;
@@ -138,7 +139,7 @@ ul, li, body, img {
 }
 .furniture-picker__container {   
     transform: translateX(200%);
-    transition: transform 0.6s;
+    transition: transform 0.5s;
 }
 .furniture-picker__list-container:hover 
 .furniture-picker__rotate-img {
@@ -189,9 +190,9 @@ ul, li, body, img {
     display: none;
 }
 
-.showMenu {
+/*.showMenu {
     transform: translateX(0);
-}
+}*/
 .furniture-picker__select {
     background-color:#fcc66ac0;
     border: solid 1px #fcb53c;
