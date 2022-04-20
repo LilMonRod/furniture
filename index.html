@@ -1,64 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseña tu espacio ideal</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="tamanos_editables.css">
-</head>
-<body>
-    <!--
-        __________¶¶_¶¶__¶¶_¶¶_
-        _________¶¶_¶¶_¶¶_¶¶_¶¶¶ 
-        _____¶¶¶¶¶____________¶¶¶¶¶¶¶ 
-        ___¶¶¶¶¶_______________¶¶¶¶¶¶¶ 
-        __¶¶¶¶¶__________________¶¶¶¶¶ 
-        __¶¶¶¶____________________¶¶¶
-        ___¶¶______________________¶¶¶ 
-        ___¶________________________¶¶¶¶ 
-        __¶¶_____¶¶¶______¶¶________¶¶¶¶¶¶¶ 
-        __¶_____¶¶¶¶_____¶¶¶¶¶______¶¶¶¶¶¶_¶ 
-        __¶____¶¶¶¶¶____¶¶¶¶¶¶¶¶____¶¶¶¶¶¶__¶ 
-        __¶¶__¶¶¶¶¶______¶¶¶¶¶¶¶___¶¶¶¶¶¶¶___¶ 
-        ___¶__¶¶¶__________¶¶¶¶___¶¶¶¶¶¶¶¶¶___¶ 
-        ___¶¶____________________¶¶¶¶¶¶¶¶¶¶___¶¶¶ 
-        ___¶¶¶_____¶¶¶¶¶¶_______¶¶¶¶¶¶¶¶¶¶¶___¶¶¶¶ 
-        ___¶¶¶¶¶___¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶ 
-        ___¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶ 
-        ___¶¶¶¶¶¶¶¶__¶¶¶___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶ 
-        ____¶¶¶¶¶¶¶¶¶¶¶¶__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ 
-        ____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶¶¶¶¶¶ 
-        ____¶¶¶¶¶¶¶¶¶_¶¶¶¶¶¶¶_¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶¶¶¶ 
-        __¶¶¶¶¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶ ¶¶¶¶¶ 
-        __¶¶¶¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶ 
-        ___¶¶¶¶¶¶¶_________¶¶¶¶¶¶¶¶¶¶¶¶ 
-        ___________________¶¶¶¶¶¶¶¶¶¶¶ 
-        ___________________¶¶¶¶¶¶¶¶¶¶ 
-        Version 4/17/22
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diseña tu espacio ideal</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="tamanos_editables.css">
+    </head>
+    <body>
+        <!--
+            111111111111111111111111111111111111111111111 
+            1111111111111111111111111¶¶111111111111111111 
+            1111111111111111111111111¶¶111111111111111111 
+            111111111111111111111111¶¶¶11¶¶11111111111111 
+            1111111111111111111111¶¶¶¶¶¶¶¶¶11111111111111 
+            111111111111111111111¶¶¶¶¶¶¶¶¶111111111111111 
+        111111111111111111111¶¶¶¶¶¶¶¶¶111111111111111 
+        11111111111111111111¶¶¶¶¶¶¶¶¶1111111111111111 
+        11111111111111111111¶¶¶¶¶¶¶¶11111111111111111 
+        1111111111111111111¶¶¶¶¶¶¶¶111111111111111111 
+        111111111111111111¶¶¶¶¶¶¶¶¶111111111111111111 
+        111111111111111111¶¶¶¶¶¶¶¶¶111111111111111111 
+        11111111111111111¶¶¶¶¶¶¶¶¶¶¶11¶11111111111111 
+        111111111111111111¶¶¶¶¶¶1¶¶¶¶¶¶11111111111111 
+        1111111111111111111¶¶¶¶¶11¶¶¶¶111111111111111 
+        111111111111111111111¶¶¶¶11111111111111111111 
+        1111111111111111111111¶¶¶¶1111111111111111111 
+        111111111111111111111111¶¶1111111111111111111 
+        111111111111111111¶11111¶¶¶111111111111111111 
+        111111111111111111¶¶1111¶¶¶111111111111111111 
+        111111111111111111¶¶¶¶¶¶¶¶¶111111111111111111 
+        1111111111111111111¶¶¶¶¶¶¶¶111111111111111111 
+        111111111111111111111¶¶¶¶¶¶111111111111111111 
+        1111111111111111111111¶¶¶¶¶111111111111111111 
+        11111111111111111111111¶¶¶¶111111111111111111 
+        111111111111111111111111¶¶¶111111111111111111 
+        1111111111111111111111111¶¶111111111111111111 
+        1111111111111111111111111¶¶¶11111111111111111 
+        1111111111111111111111111¶¶¶11111111111111111 
+        1111111111111111111111111¶¶¶11111111111111111 
+        111111111111111111111111¶¶¶111111111111111111 
+        1111111111111111111111¶¶¶¶¶111111111111111111 
+        111111111111111111111¶¶¶¶11111111111111111111 
+        111111111111111111111¶¶¶111111111111111111111 
+        111111111111111111111¶¶¶111111111111111111111 
+        1111111111111111111111¶¶1¶1111111111111111111 
+        1111111111111111111111¶¶1¶¶111111111111111111 
+        111111111¶¶¶¶111111111¶¶11¶¶11111111111111111 
+        1111111¶¶¶¶¶¶¶¶1111111¶¶1¶¶¶11111111111111111 
+        11111¶¶¶¶¶¶¶¶¶¶¶11111¶¶11¶¶¶11111111111111111 
+        1111¶¶¶¶¶¶1111¶11111¶¶11¶¶¶¶11111111111111111 
+        1111¶¶¶¶¶11111111111¶¶1¶¶¶¶¶11111111111111111 
+        1111¶¶¶¶¶1111111111¶¶1¶¶¶¶¶¶11111111111111111 
+        111¶¶¶¶¶¶111111111¶¶11¶¶¶¶¶¶1111111111¶¶¶1111 
+        1111¶¶¶¶¶¶11111111¶¶1¶¶¶¶¶¶1111111111¶¶¶¶¶111 
+        1111¶¶¶¶¶¶¶1111111¶¶1¶¶¶¶¶¶¶1111111111111¶¶11 
+        1111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶1111111111111¶¶11 
+        11111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶1111111111111¶¶11 
+        11111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶11111111111¶¶¶11 
+        111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶¶¶¶1111¶¶¶¶¶¶11 
+        111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111 
+        1111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111 
+        11111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶1111111¶¶¶¶1111 
+        11111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶111111111¶¶¶11111 
+        11111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶1111111111¶¶¶11111 
+        111111111¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶1111111111¶¶¶¶11111 
+        111111111¶¶¶¶¶¶¶¶¶¶¶¶1¶¶¶¶1111111111¶¶¶¶11111 
+        1111¶¶¶11¶¶¶¶¶¶¶¶¶¶11¶¶¶¶11111111111¶¶¶111111 
+        1111¶¶¶¶1¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶11111111111¶¶¶111111 
+        1111111¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶11111111111¶¶¶¶11111 
+        111111¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶11111¶¶¶¶1111¶¶¶11111 
+        11111¶¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶¶1111111¶¶¶111¶¶¶11111 
+        1111¶¶¶1¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶1111111¶¶¶11¶¶¶¶1111 
+        111¶¶¶1¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶1111111¶¶¶111¶¶¶1111 
+        11¶¶¶11¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1111¶¶¶¶111 
+        11¶¶¶11¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111111¶¶¶111 
+        1¶¶¶¶1¶¶¶¶¶¶¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1111111¶¶¶¶11 
+        1¶¶¶11¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶111111111¶¶¶11 
+        1¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶1111111111¶¶¶¶1 
+        1¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶¶¶111111111111¶¶¶1 
+        1¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶¶¶11¶¶¶¶111111¶¶¶1 
+        1¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶¶11¶¶¶11¶11111¶¶¶1 
+        1¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶¶1¶¶¶11111111¶¶¶¶1 
+        11¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶1¶¶111111111¶¶¶11 
+        111¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1¶1¶¶¶1111111¶¶¶¶11 
+        1111¶¶¶¶¶11¶¶¶¶¶¶¶¶¶¶¶¶¶¶11¶¶1¶¶¶¶11¶¶¶¶¶¶111 
+        11111¶¶¶¶¶¶111¶¶¶¶¶¶¶¶¶¶11¶¶¶¶1¶¶¶¶¶¶¶¶¶11111 
+        1111111¶¶¶¶¶¶¶1111111111¶¶¶¶¶¶¶¶¶¶¶¶¶11111111 
+        1111111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶111111111111 
+        1111111111111¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1111111111111111 
+        111111111111111111111111111111111111111111111
+        
+        
+        Version today change date
     -->
     <div id="main-body" class="main-body">
-    <aside class="furniture-loader">
-        <label for="imageLoader" id="fileTag" style="cursor: pointer;">
-            <span class="hide">Cargar imagen</span><img class="furniture-loader--icon" src="Assets/cargar.png" alt="">
-            <input type="file" name="imageLoader" id="image-input" style="opacity: 0; position: fixed; top: 10px; left: 10px; height: 45px; padding-top: 10px; padding-bottom: 10px; z-index: 1;" accept="image/jpeg, image/png, image/jpg">
-        </label>   
-    </aside>
-    <main id="main" class="main">
-        <img draggable="false" class="main__img" id="display-image" src="Assets/Backgrounds/vecteezy_interior-empty-room-in-3d-rendering_2070345.jpg" alt="">
-        <div class="main__room">
-            
-        </div>
-    </main>
-    <aside class="furniture-picker">
-        <div class="furniture-picker__menu">
+        <aside class="furniture-loader">
+            <label for="imageLoader" id="fileTag" style="cursor: pointer;">
+                <span class="hide">Cargar imagen</span><img class="furniture-loader--icon" src="Assets/cargar.png" alt="">
+                <input type="file" name="imageLoader" id="image-input" style="opacity: 0; position: fixed; top: 10px; left: 10px; height: 45px; padding-top: 10px; padding-bottom: 10px; z-index: 1;" accept="image/jpeg, image/png, image/jpg">
+            </label>   
+        </aside>
+        <main id="main" class="main">
+            <img draggable="false" class="main__img" id="display-image" src="Assets/Backgrounds/vecteezy_interior-empty-room-in-3d-rendering_2070345.jpg" alt="">
+            <div id="main__room" class="main__room">
+                <div data-index="0" data-id="1" data-max="5" draggable="false" class="furniture-picker__list-container draggable" style="left: 63.9296%; top: 30.6835%; position: absolute; z-index: 1;">
+                    <img draggable="false" src="Assets/img1/Mariano-1.png" data-size="mid" class="furniture-picker__img SofaCama">
+                    <img src="Assets/rotate.png" draggable="false" class="furniture-picker__rotate-img">
+                </div>
+                
+            </div>
+        </main>
+        <aside class="furniture-picker">
+            <div class="furniture-picker__menu">
             <img class="furniture-picker__menu--button menuButton" src="Assets/mostrar_articulos.png" alt="Mostrar articulos del menu">
             <img class="furniture-picker__menu--button closeButton" src="Assets/ocultar_articulos.png" alt="Ocultar articulos del menu">
             <img class="furniture-picker__menu--icon menuIcon" src="Assets/menu_show.png" alt="Click para mostrar menu">
             <img class="furniture-picker__menu--icon closeIcon" src="Assets/menu_hide.png" alt="Click para ocultar menu">
         </div>
-
+        
         <div class="furniture-picker__container">
             <select class="furniture-picker__select" name="" id="selection">
                 <option value="SofaCama">Sofa cama</option>
@@ -70,8 +131,8 @@
                 <option value="Mesas">mesas</option>
                 <option value="Sillas">sillas</option>
                 <option value="Bufeteras">bufeteras</option>
-               <!-- <option value="BarStool">Bar stool</option> -->
-               <!-- <option value="Modulos">Modulos</option> -->
+                <!-- <option value="BarStool">Bar stool</option> -->
+                <!-- <option value="Modulos">Modulos</option> -->
                 <option value="LamparasDeMesa">Lamparas de mesa</option>
                 <option value="LamparasDePie">Lamparas de pie</option>
                 <option value="LaparasColgantes">Laparas colgantes</option>
@@ -81,14 +142,19 @@
                 <option value="Cuadros">Cuadros</option> 
             </select>
             <ul id="pickerList" class="furniture-picker__list">
-           
+                
             </ul>
         </div>
         <img class="furniture-picker__trashcan" src="Assets/Eliminar.png" alt="arrastrar imagen aqui para eliminarla.">
     </aside>
-
-    <script type="module" src="draw.js"></script>
+    
+    <script type="module" src="main.js"></script>
     <script src="loadFile.js"></script>
+    
+    <!-- glitch -->
+    <!-- Move code -->
+    <script src="move.js"></script>
+
 </body>
 
 </html>
