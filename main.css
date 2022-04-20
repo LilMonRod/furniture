@@ -75,7 +75,7 @@ ul, li, body, img {
     border-radius: 15px;
     display: inline-flex;
     flex-direction: column;
-    transition: backgroundColor 0.5s;
+    transition: background-color 0.7s;
 }
 .furniture-picker--open {
     box-shadow: 0 0 20px -15px #000;
