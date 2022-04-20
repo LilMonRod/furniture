@@ -159,6 +159,9 @@ function setDown({ target, clientX, clientY }) {
           
           mainRoom.appendChild(clone);
           clone.appendChild(rotateImg);
+
+          ///////////// cerrar el menu 
+          toggleMenu();
         } else if (
           target.parentElement.parentElement?.classList.contains("main__room")
           ) {
