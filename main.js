@@ -160,8 +160,11 @@ function setDown({ target, clientX, clientY }) {
           mainRoom.appendChild(clone);
           clone.appendChild(rotateImg);
 
-          ///////////// cerrar el menu 
-          toggleMenu();
+          ///////////// cerrar el menu cuando se clona un mueble
+          console.log(window.innerWidth)
+          if (window.innerWidth > 600) {
+            toggleMenu();
+          }
         } else if (
           target.parentElement.parentElement?.classList.contains("main__room")
           ) {

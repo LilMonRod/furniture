@@ -248,7 +248,7 @@ ul, li, body, img {
         height: calc(63vh - 180px);
     }
     .furniture-picker__container {
-        transform: translateX(0%);
+        transform: translateX(0%) !important;
     }
     .furniture-picker__img {
         width: 24vw;
