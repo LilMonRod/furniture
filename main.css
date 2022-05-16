@@ -3,9 +3,7 @@
 
 
 
-body {
-    overflow-x: hidden;
-}
+
 
 .furniture-picker__trashcan {
     display: flex;
@@ -37,7 +35,6 @@ body {
     position: relative;
 }
 .main-body {
-    overflow: hidden;
     width: 100vw;
     height: 100vh;
     max-width: 1500px;
@@ -219,6 +216,9 @@ ul, li, body, img {
     }
 }
 @media only screen and (max-width: 690px) {
+    .furniture-picker--open {
+        z-index: 	auto;
+    }
     .furniture-picker__menu--text {
         font-size: 14px;
     }
