@@ -6,9 +6,7 @@
 
 
 .furniture-picker__trashcan {
-    display: flex;
     background: #7f00c9;
-    padding: 15px 0;
 }
 
 .hide {
@@ -155,7 +153,16 @@ ul, li, body, img {
 }
 .furniture-picker__trashcan {
     width: clamp(90px, 15vw, 165px);
-    align-self: center;
+}
+.furniture-picker__trash {
+    background-color: #ffffff;
+    padding: 10px 0 10px 0;
+    width: 15vw;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    justify-content: center;
 }
 .furniture-picker__title {
     align-self: center;
@@ -232,6 +239,7 @@ ul, li, body, img {
     .furniture-picker__rotate-img {
         width: 80px;
     }
+    
 }
 @media only screen and (max-width: 600px) {
     .furniture-picker__menu {
@@ -240,6 +248,10 @@ ul, li, body, img {
     .furniture-picker {
         width: 100%;
         position: relative;
+    }
+    .furniture-picker__trash {
+        width: 100vw;
+        justify-content: center;
     }
     .furniture-picker__list {   
         transform: translateX(0%);
