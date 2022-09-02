@@ -1,5 +1,4 @@
 const d = document.getElementsByClassName("draggable");
-console.log(d)
 for (let i = 0; i < d.length; i++) {
 	d[i].style.position = "absolute";
 }

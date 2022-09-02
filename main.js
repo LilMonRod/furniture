@@ -161,7 +161,6 @@ function setDown({ target, clientX, clientY }) {
           clone.appendChild(rotateImg);
 
           ///////////// cerrar el menu cuando se clona un mueble
-          console.log(window.innerWidth)
           if (window.innerWidth > 600) {
             toggleMenu();
           }
